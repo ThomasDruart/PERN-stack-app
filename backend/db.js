@@ -10,3 +10,5 @@ const pool = new Pool({
   port: DB_PORT,
   database: DB_NAME,
 });
+
+module.exports = pool;
