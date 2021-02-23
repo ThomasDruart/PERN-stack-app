@@ -10,6 +10,7 @@ const InputTodo = () => {
       const body = { description };
       const response = await axios.post("http://localhost:5000/todos", body);
       console.log(response.data);
+      window.location = "/";
     } catch (err) {
       console.error(err.message);
     }
